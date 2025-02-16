@@ -137,9 +137,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
             Dashboard
           </Typography>
-          <IconButton onClick={toggleTheme} color="inherit">
-            {theme.palette.mode === 'dark' ? <Brightness7 /> : <Brightness4 />}
-          </IconButton>
+            <IconButton onClick={toggleTheme} color="inherit">
+                {isDark ? <Brightness7 /> : <Brightness4 />}
+            </IconButton>
         </Toolbar>
       </AppBar>
 
